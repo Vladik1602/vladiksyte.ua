@@ -1,0 +1,188 @@
+/* ===== Загальні налаштування стилю ===== */
+
+body {
+    font-family: 'Poppins', sans-serif; /* Основний шрифт */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Світлий фон */
+    color: #333; /* Темний текст */
+    line-height: 1.6;
+}
+
+/* ===== Стиль заголовка (header) ===== */
+
+header {
+    background: linear-gradient(to right, #1f76f1, #396ff8, #132df4); /* Градієнтна заливка */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для заголовка */
+}
+
+header nav ul {
+    list-style: none; /* Відсутність маркерів у списку */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* Білий текст */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 30px;
+}
+
+header nav ul li a:hover {
+    background-color: #f15d5d; /* Колір при наведенні */
+    color: #fff;
+}
+/* Загальний стиль для посилань */
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Стиль для кнопок */
+.features ul li a {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6D5DF5, #C445FF);
+    background-position: center; /* Центрування фону */
+    background-size: cover; /* Покриває всю кнопку */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: inline-block;
+}
+
+/* Анімація на ховер */
+.features ul li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #C445FF, #6D5DF5);
+    background-position: center; /* Центрування фону */
+}
+
+
+/* Додатковий стиль для кнопок */
+.features ul li a:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===== Стиль основного блоку (main) ===== */
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px; /* Максимальна ширина */
+    margin: 0 auto;
+}
+
+/* Вступний текст на головній сторінці */
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* ===== Стиль секції з можливостями (features) ===== */
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.features ul {
+    display: flex;
+    align-items: center; /* Центрування кнопок по горизонталі */
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    background-color: #ffffff; /* Червоне тло для елементів */
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features ul li:hover {
+    transform: translateY(-10px); /* Зміщення при наведенні */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Посилена тінь */
+}
+
+/* ===== Стиль футера (footer) ===== */
+
+footer {
+    background-color: #0f2027;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ff6363; /* Колір соціальних іконок при наведенні */
+}
+
+/* ===== Адаптивний дизайн ===== */
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+}
